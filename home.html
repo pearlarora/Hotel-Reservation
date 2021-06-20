@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="shortcut icon" href="css/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <header>
+        <a href="">
+            <img id="logo" src="css/images/logo.png" alt="Website Logo">
+        </a>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+
+            <!-- google - page translation -->
+            <div id="google_translate_element"></div>
+            
+            <button>Login</button>
+            <button>SignUp</button>
+        </nav>
+    </header>
+
+    <!-- search form -->
+    <section id="form-background">
+        <div id="search-form">
+            <h1>Search for HOTELS, RESORTS & MORE</h1><br>
+            <h3>Get the best prices on 2,000+ properties</h3><br>
+            <form action="">
+                <input type="search" placeholder="Enter a destination or property">
+                <div id="date">
+                    <input type="text" class="date-inputs" placeholder="Check-In Date" onfocus="(this.type='date')">
+                    <input type="text" class="date-inputs" placeholder="Check-Out Date" onfocus="(this.type='date')">
+                </div>
+                <input type="number" placeholder="Number of Rooms">
+                <input type="submit" value="SEARCH" id="search">
+            </form>
+        </div>
+    </section>
+
+    <section id="deals">
+        <h1>Explore Deals</h1>
+
+        <div id="scrollable-gallery">
+            <button class="scroll" id="slideBack" type="button"><i class="fas fa-chevron-left"></i></button>
+
+            <div id="gallery">
+                <div class="deal-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="caption">
+                        <h4>New Year Offer</h4>
+                        <p>Here is a description about the offer.</p>
+                        <button class="deal-button">Find Deals</button>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="caption">
+                        <h4>New Year Offer</h4>
+                        <p>Here is a description about the offer.</p>
+                        <button class="deal-button">Find Deals</button>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="caption">
+                        <h4>New Year Offer</h4>
+                        <p>Here is a description about the offer.</p>
+                        <button class="deal-button">Find Deals</button>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="caption">
+                        <h4>New Year Offer</h4>
+                        <p>Here is a description about the offer.</p>
+                        <button class="deal-button">Find Deals</button>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="caption">
+                        <h4>New Year Offer</h4>
+                        <p>Here is a description about the offer.</p>
+                        <button class="deal-button">Find Deals</button>
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="caption">
+                        <h4>New Year Offer</h4>
+                        <p>Here is a description about the offer.</p>
+                        <button class="deal-button">Find Deals</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="scroll" id="slide" type="button"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="discover">
+        <h1>Discover Today</h1>
+        <h5>Come and explore the best of the world, from modern cities to natural landscapes</h5>
+
+        <div id="scrollable-places">
+            <div id="places-gallery">
+                <div class="places-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="desc">
+                        <p>58+ hotels</p>
+                        <h6>Place Name</h6>
+                    </div>
+                </div>
+                <div class="places-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="desc">
+                        <p>58+ hotels</p>
+                        <h6>Place Name</h6>
+                    </div>
+                </div>
+                <div class="places-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="desc">
+                        <p>58+ hotels</p>
+                        <h6>Place Name</h6>
+                    </div>
+                </div>
+                <div class="places-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="desc">
+                        <p>58+ hotels</p>
+                        <h6>Place Name</h6>
+                    </div>
+                </div>
+                <div class="places-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="desc">
+                        <p>58+ hotels</p>
+                        <h6>Place Name</h6>
+                    </div>
+                </div>
+                <div class="places-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="desc">
+                        <p>58+ hotels</p>
+                        <h6>Place Name</h6>
+                    </div>
+                </div>
+                <div class="places-card">
+                    <img src="https://source.unsplash.com/random" alt="">
+                    <div class="desc">
+                        <p>58+ hotels</p>
+                        <h6>Place Name</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="scroll-arrows">
+            <button class="scroll" id="slide-back" type="button"><i class="fas fa-arrow-left"></i></button>
+            <i class="fas fa-slash"></i>
+            <button class="scroll" id="slide-front" type="button"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <footer>Team Members: Pearl, Prakhar, Prashant, Prakash</footer>
+
+    <!-- script for google page translator -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <!-- script for Explore Deals -->
+    <script>
+        var button = document.getElementById('slide');
+        button.onclick = function () {
+            var container = document.getElementById('gallery');
+            sideScroll(container, 'right', 25, 100, 10);
+        };
+
+        var back = document.getElementById('slideBack');
+        back.onclick = function () {
+            var container = document.getElementById('gallery');
+            sideScroll(container, 'left', 25, 100, 10);
+        };
+
+        function sideScroll(element, direction, speed, distance, step) {
+            scrollAmount = 0;
+            var slideTimer = setInterval(function () {
+                if (direction == 'left') {
+                    element.scrollLeft -= step;
+                } else {
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if (scrollAmount >= distance) {
+                    window.clearInterval(slideTimer);
+                }
+            }, speed);
+        }
+    </script>
+
+    <!-- script for Discover Today -->
+    <script>
+        var button = document.getElementById('slide-front');
+        button.onclick = function () {
+            var container = document.getElementById('places-gallery');
+            sideScroll(container, 'right', 25, 100, 10);
+        };
+
+        var back = document.getElementById('slide-back');
+        back.onclick = function () {
+            var container = document.getElementById('places-gallery');
+            sideScroll(container, 'left', 25, 100, 10);
+        };
+
+        function sideScroll(element, direction, speed, distance, step) {
+            scrollAmount = 0;
+            var slideTimer = setInterval(function () {
+                if (direction == 'left') {
+                    element.scrollLeft -= step;
+                } else {
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if (scrollAmount >= distance) {
+                    window.clearInterval(slideTimer);
+                }
+            }, speed);
+        }
+    </script>
+
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+</body>
+
+</html>

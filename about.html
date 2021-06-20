@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="shortcut icon" href="css/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- google - page translation -->
+    <div id="google_translate_element"></div>
+
+    <!-- background design -->
+    <div id="bubble1" class="bubbles"></div>
+    <div id="bubble2" class="bubbles"></div>
+    <div id="bubble3" class="bubbles"></div>
+    <div id="bubble4" class="bubbles"></div>
+    <div id="bubble5" class="bubbles"></div>
+    <div id="outer-div">
+        <div id="background"></div>
+    </div>
+
+    <!-- navigation bar -->
+    <header>
+        <nav id="navbar">
+            <a href="">
+                <i class="fas fa-angle-left fa-lg"></i>
+                <h1>Home</h1>
+            </a>
+        </nav>
+    </header>
+
+    <section id="about-us">
+        <h1>
+            ___<br>
+            About Us
+        </h1>
+        <div id="columns">
+            <div id="left">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, aliquid nam sint deserunt
+                    doloremque facere odit et aspernatur facilis possimus dolor nemo autem magnam cupiditate quia qui
+                    fuga, deleniti sed eaque fugit dicta hic mollitia ipsa quibusdam! Quaerat, deserunt odio quod vero
+                    totam minima optio porro autem quos cumque voluptas.</p>
+                <div id="numbers">
+                    <h6>
+                        <i class="fas fa-hotel"></i>
+                        5M+ Properties
+                    </h6>
+                    <h6>
+                        <i class="fas fa-globe-americas"></i>
+                        190+ Contries
+                    </h6>
+                    <h6>
+                        <i class="fas fa-smile"></i>
+                        2000+ Happy Users
+                    </h6>
+                </div>
+            </div>
+            <div id="right">
+                <h3>Gallery</h3>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://source.unsplash.com/random">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://source.unsplash.com/collection/190727">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://source.unsplash.com/user/erondu">
+                    </div>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- script for google page translator -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <!-- script for gallery -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+</body>
+
+</html>

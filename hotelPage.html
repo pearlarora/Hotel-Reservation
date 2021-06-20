@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Hotel Page</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/hotelPage.css">
+
+    <link rel="shortcut icon" href="css/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <header>
+        <a href="">
+            <img id="logo" src="css/images/logo.png" alt="Website Logo">
+        </a>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+
+            <!-- google - page translation -->
+            <div id="google_translate_element"></div>
+
+            <button>Login</button>
+            <button>SignUp</button>
+        </nav>
+    </header>
+
+    <section class="hotel">
+        <img src="https://source.unsplash.com/user/erondu/1600x900" alt="">
+        <div class="content">
+            <h1>Hotel Name</h1>
+            <h3>Hotel Destination Name</h3>
+            <h5>Hotel Address</h5>
+            <p>A short description about the hotel...</p>
+            <div class="ratings">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="details">
+        <div id="left-section">
+            <h3>
+                ___<br>
+                Description
+            </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus iusto maxime consequuntur. Quo labore
+                quasi maxime necessitatibus vero recusandae, ullam sit nemo, vitae facilis nam assumenda officia.
+                Incidunt quo cum ex, tempore dolor nesciunt veritatis, molestiae dolores vel impedit minima.</p>
+            <h3>
+                ___<br>
+                Tariff
+            </h3>
+            <p>For 1 room - ₹2,275/night</p>
+        </div>
+        <div class="vertical-line"></div>
+        <div id="right-section">
+            <h3>
+                ___<br>
+                Facilities Offered
+            </h3>
+            <ul>
+                <li>Free WiFi</li>
+                <li>Breakfast Included</li>
+                <li>24/7 Room Service</li>
+                <li>Pool and Spa</li>
+                <li>Air Conditioning</li>
+                <li>Parking</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="hotel-gallery">
+        <h1>Hotel Gallery</h1>
+        <div id="scrollable-gallery">
+            <button class="scroll" id="slideBack" type="button"><i class="fas fa-chevron-left"></i></button>
+
+            <div id="gallery">
+                <img src="https://source.unsplash.com/random" alt="">
+                <img src="https://source.unsplash.com/random" alt="">
+                <img src="https://source.unsplash.com/random" alt="">
+                <img src="https://source.unsplash.com/random" alt="">
+                <img src="https://source.unsplash.com/random" alt="">
+                <img src="https://source.unsplash.com/random" alt="">
+                <img src="https://source.unsplash.com/random" alt="">
+                <img src="https://source.unsplash.com/random" alt="">
+                <img src="https://source.unsplash.com/random" alt="">
+            </div>
+
+            <button class="scroll" id="slide" type="button"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="hotel-location">
+        <h1>Hotel Location on the Map</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27512.154771013986!2d78.05073192231268!3d30.463890121991962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d0c4995148ff%3A0x7fd761acda102c89!2sHotel%20Hamers%20International!5e0!3m2!1sen!2sin!4v1623763298827!5m2!1sen!2sin"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- script for hotel gallery -->
+    <script>
+        var button = document.getElementById('slide');
+        button.onclick = function () {
+            var container = document.getElementById('gallery');
+            sideScroll(container, 'right', 25, 500, 10);
+        };
+
+        var back = document.getElementById('slideBack');
+        back.onclick = function () {
+            var container = document.getElementById('gallery');
+            sideScroll(container, 'left', 25, 500, 10);
+        };
+
+        function sideScroll(element, direction, speed, distance, step) {
+            scrollAmount = 0;
+            var slideTimer = setInterval(function () {
+                if (direction == 'left') {
+                    element.scrollLeft -= step;
+                } else {
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if (scrollAmount >= distance) {
+                    window.clearInterval(slideTimer);
+                }
+            }, speed);
+        }
+    </script>
+
+    <footer>Team Members: Pearl, Prakhar, Prashant, Prakash</footer>
+
+    <!-- script for google page translator -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+</body>
+
+</html>

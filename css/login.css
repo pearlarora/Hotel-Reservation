@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', Times, serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+}
+
+#blue {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(47, 117, 247);
+}
+
+#navbar {
+    padding: 30px 100px;
+}
+#navbar i {
+    height: 80px;
+}
+#navbar h1 {
+    display: inline;
+    font-size: 20px;
+}
+#navbar h1:hover {
+    text-decoration: underline;
+}
+
+#section-1 {
+    display: flex;
+    align-items: center;
+}
+#left {
+    width: 50%;
+    margin:20px 100px;
+    font-size: 40px;
+}
+#right {
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 0px;
+    height: 274px;
+    width: 25%;
+    padding:50px;
+    background-color: white;
+    box-shadow: -1px -1px 200px rgb(224, 222, 222);
+}
+#sign-up-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+input:hover {
+    cursor: pointer;
+}
+input:focus {
+    background-color: #e9e7e7;
+}
+input[type=email], input[type=password] {
+    padding: 10px;
+    border: 1px solid #dbdada;
+    margin: 5px 0 18px 0;
+    display: block;
+    width: 94%;
+}
+::placeholder {
+    color: #adadad;
+}
+#email-id, #password {
+    width: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=submit] {
+    margin: auto;
+    background-color: rgb(47, 117, 247);
+    border-radius: 50px;
+    border: 1px solid #cfcece;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: white;
+}
+#login:hover {
+    box-shadow: 0 0 3px rgb(47, 117, 247);
+}
+#right h6 {
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size:14px; 
+    margin: 10px 0;
+}
+#last-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+#last-line h4 {
+    font-weight: lighter;
+}
+#signup:hover {
+    color: rgb(47, 117, 247);
+}
+
+#google_translate_element {
+    float: right;
+}
+.goog-te-combo {
+    outline: none;
+    border: none;
+    padding: 5px;
+    box-shadow: 0 0 3px rgb(121, 120, 120);
+}
+.goog-te-gadget {
+    color: transparent !important;
+}
+.goog-te-gadget img {
+    display: none;
+}
+.goog-logo-link {
+    display: none;
+}
